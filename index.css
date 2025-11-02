@@ -1,4 +1,4 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
     background-image: url("img/table.png");
@@ -20,10 +20,10 @@ button {
     border: none;
 }
 
-button#new-deck {
+/* button#new-deck {
     align-self: flex-start;
     padding: 5px;
-}
+} */
 
 button.draw {
     font-size: 1.2em;
@@ -47,13 +47,12 @@ img.card {
     height: 100%;
 }
 
-div.top {
+.top {
     display: flex;
-    align-items: flex-start;
-    align-self: flex-start;
+    justify-content: center;
 }
 
-div.top > p {
+.top > p {
     margin: 0;
     margin-left: 10px;
 }
