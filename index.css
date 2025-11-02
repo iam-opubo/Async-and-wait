@@ -20,10 +20,6 @@ button {
     border: none;
 }
 
-/* button#new-deck {
-    align-self: flex-start;
-    padding: 5px;
-} */
 
 button.draw {
     font-size: 1.2em;
