@@ -26,10 +26,9 @@ button {
     margin-top: 5px;
 }
 
-#remaining{
+#remaining {
     margin-top: 15px;
 }
-
 
 button.draw {
     font-size: 1.2em;
@@ -69,4 +68,99 @@ button:disabled {
 
 h2 {
     margin: 10px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        justify-content: flex-start;
+        padding-top: 10px;
+    }
+
+    #new-deck {
+        width: 80px;
+        height: 38px;
+        font-size: 0.9rem;
+    }
+
+    button.draw {
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+
+    div.card-slot {
+        height: 105px;
+        width: calc(105px * 5 / 7);
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+@media (max-width: 430px) {
+    #new-deck {
+        width: 75px;
+        height: 35px;
+        font-size: 0.85rem;
+    }
+
+    div.card-slot {
+        height: 95px;
+        width: calc(95px * 5 / 7);
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width: 390px) {
+    #new-deck {
+        width: 70px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+
+    button.draw {
+        font-size: 1rem;
+    }
+
+    div.card-slot {
+        height: 90px;
+        width: calc(90px * 5 / 7);
+    }
+}
+
+
+
+@media (max-width: 360px) {
+    #new-deck {
+        width: 65px;
+        height: 30px;
+        font-size: 0.75rem;
+    }
+
+    button.draw {
+        font-size: 0.9rem;
+    }
+
+    div.card-slot {
+        height: 80px;
+        width: calc(80px * 5 / 7);
+    }
+
+    h2, #remaining {
+        font-size: 0.9rem;
+    }
 }
